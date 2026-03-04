@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Margarida Almeida - Esteticista</title>
 </head>
 
 <body>
     <nav class="navbar">
         <a href="#" class="logo">Almeida</a>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="material-icons">menu</i>
+        </button>
         <div class="nav-links">
             <a href="#about">Sobre</a>
             <a href="page2.html">Serviços</a>
@@ -19,6 +22,19 @@
             <a href="#contact">Contacto</a>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()"
+            style="position: absolute; top: 20px; right: 20px;">
+            <i class="material-icons">close</i>
+        </button>
+        <a href="#" onclick="toggleMobileMenu()">Almeida</a>
+        <a href="#about" onclick="toggleMobileMenu()">Sobre</a>
+        <a href="page2.html" onclick="toggleMobileMenu()">Serviços</a>
+        <a href="page3.html" onclick="toggleMobileMenu()">Portfolio</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contacto</a>
+    </div>
 
     <section class="hero">
         <div class="hero-background"></div>
@@ -49,7 +65,18 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">Almeida</div>
+        <p class="footer-text">Lorem Ipsum | Duis</p>
+        <div class="social-links">
+            <a href="#"><i class="material-icons">facebook</i></a>
+            <a href="#"><i class="material-icons">photo_camera</i></a>
+            <a href="#"><i class="material-icons">email</i></a>
+        </div>
+        <p class="copyright">© 2026 Tomás Lageira.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
