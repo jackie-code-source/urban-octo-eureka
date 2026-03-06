@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <a href="#" class="logo">Home</a>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -17,8 +18,8 @@
         </button>
         <div class="nav-links">
             <a href="#about">Sobre</a>
-            <a href="page2.html">Serviços</a>
-            <a href="page3.html">Galeria</a>
+            <a href="./pages/serviços.html">Serviços</a>
+            <a href="./pages/galeria.html">Galeria</a>
             <a href="#contact">Contacto</a>
         </div>
     </nav>
@@ -31,19 +32,23 @@
         </button>
         <a href="#" onclick="toggleMobileMenu()">Home</a>
         <a href="#about" onclick="toggleMobileMenu()">Sobre</a>
-        <a href="page2.html" onclick="toggleMobileMenu()">Serviços</a>
-        <a href="page3.html" onclick="toggleMobileMenu()">Galeria</a>
+        <a href="./pages/serviços.html">Serviços</a>
+        <a href="./pages/galeria.html">Galeria</a>
         <a href="#contact" onclick="toggleMobileMenu()">Contacto</a>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="brand-name">Margarida Almeida</h1>
             <p class="brand-subtitle">Esteticista</p>
+            <p class="brand-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
         </div>
+
+        <div class="hero-image"></div>
     </section>
 
     <!-- About Section -->
@@ -111,44 +116,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="service-highlights">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="material-icons">back_hand</i>
-                        </div>
-                        <h4 class="highlight-title">Manicure</h4>
-                        <p class="highlight-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="material-icons">palette</i>
-                        </div>
-                        <h4 class="highlight-title">Nail Art Design</h4>
-                        <p class="highlight-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="material-icons">brush</i>
-                        </div>
-                        <h4 class="highlight-title">Unhas de Gel</h4>
-                        <p class="highlight-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">
-                            <i class="material-icons">spa</i>
-                        </div>
-                        <h4 class="highlight-title">Manutenção</h4>
-                        <p class="highlight-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                    </div>
+                <div class="contact-image">
+                    <img src="https://sfile.chatglm.cn/images-ppt/21341da50446.jpg" alt="Nail Art">
                 </div>
+
             </div>
         </div>
     </section>
